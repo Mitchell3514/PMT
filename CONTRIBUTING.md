@@ -30,5 +30,12 @@ For an already assigned issue, ask any assignee if/how you can help.
 - Thorougly check your changes for any mistakes and also test so on a self-hosted version.
 - Any PR to development/master can only be reviewed and merged by a code author, so request approval by one in the comments (currently only me, [@Mitchell3514][github-Mitchell3514])
 
+## Commits
+- Commit messages should follow the standard by [Angular][angular-contributing].
+- Where scope can be any file.
+- A body and footer are not necessary, but if used, also follow the standard.
 
+
+
+[angular-contributing]: https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit
 [github-Mitchell3514]: https://github.com/Mitchell3514
