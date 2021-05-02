@@ -1,4 +1,4 @@
-Copyright © 2021 Miworks
+![version] ![UR-status]
 # Password Manager Test
 
 PMT aims at mocking a modern site on which you require an account. 
@@ -21,5 +21,12 @@ For details on contributing view the [contribution file](./CONTRIBUTING.md).
 ## Hosting
 The website is currently hosted on my website at [login.mitchells.work][login-site].
 
+Copyright © 2021 Miworks  
+
+<!-- shields(.io) -->
+[version]: https://img.shields.io/badge/version-v0.1.1--alpha-blue
+[UR-status]: https://img.shields.io/uptimerobot/status/m788016880-1a45a6df05ee28cdbbf024cf
+
+<!-- site links -->
 [miworks-site]: https://mitchells.work
 [login-site]: https://login.mitchells.work
