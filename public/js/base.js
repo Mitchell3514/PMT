@@ -134,13 +134,15 @@ let cardFooter;
 function refreshCard() {
     if (!cardInfoDiv || !cardUsrDiv || !cardPwdDiv) return;
 
+    refreshButton();
+
     for (const div of [cardUsrDiv, cardPwdDiv])
         while (div.firstChild) 
             div.removeChild(div.lastChild);
     cardInfoDiv.innerHTML = "";
     cardLogins.classList.remove("is-hidden");
 
-    const hidden = !!(window.localStorage.getItem("h"));
+    const hidden = !(window.localStorage.getItem("h"));
     const loggedIn = window.localStorage.getItem("c");
 
     if (hidden) {
@@ -180,6 +182,17 @@ function refreshCard() {
     cardContainer.classList.remove("is-hidden");
 }
 
+function refreshButton() {
+    const hidden = !(window.localStorage.getItem("h"));
+    if (hidden) {
+        cardShowDetails.classList.remove("is-hidden");
+        cardHideDetails.classList.add("is-hidden");
+    } else {
+        cardShowDetails.classList.add("is-hidden");
+        cardHideDetails.classList.remove("is-hidden");
+    }
+}
+
 /**
  * Card buttons
  */
@@ -217,23 +230,14 @@ const cardInterval = setInterval(() => {
     });
     
     cardShowDetails.addEventListener("click", () => {
-        cardShowDetails.classList.add("is-hidden");
-        cardHideDetails.classList.remove("is-hidden");
-        window.localStorage.removeItem("h");
+        window.localStorage.setItem("h", "hidden");
         refreshCard();
     });
     
     cardHideDetails.addEventListener("click", () => {
-        cardShowDetails.classList.remove("is-hidden");
-        cardHideDetails.classList.add("is-hidden");
-        window.localStorage.setItem("h", "hidden");
+        window.localStorage.removeItem("h");
         refreshCard();
     });
-
-    if (!window.localStorage.getItem("h")) {
-        cardShowDetails.classList.add("is-hidden");
-        cardHideDetails.classList.remove("is-hidden");
-    }
 
     refreshCard();
 }, 250);
