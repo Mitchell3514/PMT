@@ -15,6 +15,9 @@ Currently the site is only in Dutch, as that is what I will be using it for pers
 - [ ] Interactive guides  
 A more difficult project will be to add interactive pop-ups that guide a user on how to use the password manager of their choice. Even though it would be impossible to include all of them, it may be possible to dynamically generate instructions based on inserting the small differences per manager.
 
+## Contributing
+For details on contributing view the [contribution file](./CONTRIBUTING.md).
+
 ## Hosting
 The website is currently hosted on my website at [login.mitchells.work][login-site].
 
