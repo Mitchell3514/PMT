@@ -21,7 +21,7 @@ For details on contributing view the [contribution file](./CONTRIBUTING.md).
 ## Hosting
 The website is currently hosted on my website at [login.mitchells.work][login-site].
 
-Copyright © 2021 Miworks  
+Copyright © 2021 Mitchell Rademaker  
 
 <!-- shields(.io) -->
 [version]: https://img.shields.io/badge/version-v0.1.1--alpha-blue
