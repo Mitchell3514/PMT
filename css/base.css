@@ -1,0 +1,113 @@
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+
+nav.navbar {
+    background: none;
+}
+
+nav.navbar::before {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    content: "";
+
+    opacity: 40%;
+
+    background-blend-mode: lighten;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    BODY                                    */
+/* -------------------------------------------------------------------------- */
+
+span.clickable {
+    pointer-events: initial !important;
+}
+
+span.clickable:hover {
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  INFO CARD                                 */
+/* -------------------------------------------------------------------------- */
+
+/* positioning */
+
+div#info-card {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+/* card background */
+
+#info-card.container {
+    z-index: 1;
+}
+
+.card {
+    background: none;
+    box-shadow: 2px 2px 8px #444;
+}
+
+.card::before {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+    content: "";
+
+    opacity: 40%;
+
+    background: #aa4b6b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/* card icon */
+
+.card-header-icon {
+    background: none;
+    border: none;
+}
+
+#card-show-details {
+    box-shadow: inset 1px 1px #666;
+}
+
+#card-hide-details {
+    box-shadow: inset 1px -1px #666;
+}
+
+/* footer */
+
+.card-footer {
+    border-top: none;
+}
+
+.card-footer-item {
+    flex-basis: initial;
+    border-top: 1px solid #666;
+}
+.card-footer-item:not(:last-child) {
+    border-right: 1px solid #666;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+footer.footer {
+    background: none;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}

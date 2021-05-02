@@ -1,0 +1,51 @@
+<div id="info-card" class="container is-hidden">
+    
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">
+                <span class="icon">
+                    <i class="fas fa-tools" aria-hidden="true"></i>
+                </span>
+                <span>Gegevens</span>
+            </p>
+            <button id="card-show-details" class="card-header-icon" aria-label="more options">
+                <span class="icon clickable">
+                    <i class="fas fa-angle-left" aria-hidden="true"></i>
+                </span>
+            </button>
+            <button id="card-hide-details" class="card-header-icon is-hidden" aria-label="more options">
+                <span class="icon clickable">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+            </button>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                <div id="card-loggedin" class="field"></div>
+                <div id="card-logins" class="field">
+                    <div class="columns">
+                        <div id="card-usernames" class="column"></div>
+                        <div id="card-passwords" class="column"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="is-size-7 is-italic">Alles wordt alleen lokaal opgeslagen.</div>
+        </div>
+        <footer class="card-footer has-text-centered">
+            <a id="card-logout" class="card-footer-item has-text-dark">Uitloggen</a>
+            <a id="card-accounts" class="card-footer-item has-text-dark">
+                <span class="icon is-small">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </span>
+                <span>Accounts</span>
+            </a>
+            <a id="card-clear" class="card-footer-item has-text-dark">
+                <span class="icon is-small">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </span>
+                <span>Alles</span>
+            </a>
+        </footer>
+    </div>
+    
+</div>
