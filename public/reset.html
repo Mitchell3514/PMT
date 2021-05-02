@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PMT - Registreren</title>
+    <title>PMT - Herstellen</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body style="height: 100vh; width: 100vw;">
 
-    <div w3-include-html="navbar.html"></div>
+    <div w3-include-html="snippets/navbar.html"></div>
 
     <div class="section columns">
         <div class="container column is-narrow">
 
             <div class="title has-text-centered">
-                Registreren
+                Wachtwoord vergeten
             </div>
     
-            <div class="field">
+            <div id="username" class="field">
                 <label class="label">Gebruikersnaam/e-mail</label>
                 <div class="control has-icons-left">
                     <input type="text" autocomplete="username" name="username" id="username" class="input" placeholder="gebruikersnaam/e-mail">
@@ -30,8 +30,8 @@
                 </div>
             </div>
     
-            <div class="field">
-                <label class="label">Wachtwoord</label>
+            <div id="password" class="field">
+                <label class="label">Nieuw wachtwoord</label>
                 <div class="control has-icons-left has-icons-right">
                     <input type="password" autocomplete="new-password" name="password" id="new-password" class="input" placeholder="********">
                     <span class="icon is-small is-left">
@@ -49,13 +49,7 @@
 
             <div class="field">
                 <div class="control">
-                    <button id="reset" class="button is-fullwidth is-light">Registreren</button>
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control">
-                    <button id="login" class="button is-fullwidth is-small is-link">Aanmelden</button>
+                    <button id="reset" class="button is-fullwidth is-danger">Herstellen</button>
                 </div>
             </div>
             
@@ -65,18 +59,17 @@
 
         </div>
     </div>
-
-    <div id="include-info-card" w3-include-html="info-card.html"></div>
-    <div id="include-footer" w3-include-html="footer.html"></div>
-
+    
+    <div id="include-info-card" w3-include-html="snippets/info-card.html"></div>
+    <div id="include-footer" w3-include-html="snippets/footer.html"></div>
 
 </body>
 
     <script src="https://kit.fontawesome.com/974ee44eef.js" crossorigin="anonymous"></script>
 
-    <script src="./js/base.js"></script>
     <script src="./js/w3-include.js"></script>
+    <script src="./js/base.js"></script>
 
-    <script src="./js/register.js"></script>
+    <script src="./js/reset.js"></script>
 
 </html>
