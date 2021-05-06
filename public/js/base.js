@@ -251,10 +251,10 @@ const cardInterval = setInterval(() => {
  * Enable password visibility in fields
  */
 document.addEventListener("DOMContentLoaded", () => {
-    const eyeIcons = document.querySelectorAll(".password-visibility");
+    const visIcons = document.querySelectorAll(".password-visibility");
 
-    for(const eyeIcon of eyeIcons) {
-        eyeIcon.addEventListener("click", ev => {
+    for(const visIcon of visIcons) {
+        visIcon.addEventListener("click", ev => {
             const t = ev.target.tagName === "I" ? ev.target.parentNode : ev.target;
             const c = t.parentNode.children;
         
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
             passInput.setAttribute("type", ["text", "password"][+(passInput.getAttribute("type") === "text")]);
     
             t.classList.add("is-hidden");
-            filterAll(c, ch => ch.tagName === "SPAN" && ch.classList.contains("is-right") && ch !== t)[0]
+            filterAll(c, ch => ch.tagName === "SPAN" && ch.classList.contains("is-left") && ch !== t)[0]
                 .classList.remove("is-hidden");
         });
     }
