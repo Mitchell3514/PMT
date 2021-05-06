@@ -24,7 +24,7 @@ The website is currently hosted on my website at [login.mitchells.work][login-si
 Copyright © 2021 Mitchell Rademaker  
 
 <!-- shields(.io) -->
-[version]: https://img.shields.io/badge/version-v0.1.1--alpha-blue
+[version]: https://img.shields.io/badge/version-v0.1.2--alpha-blue
 [UR-status]: https://img.shields.io/uptimerobot/status/m788016880-1a45a6df05ee28cdbbf024cf
 
 <!-- site links -->
