@@ -4,6 +4,8 @@
 PMT aims at mocking a modern site on which you require an account. 
 That way, people can test their password managers in an easy, clean and secure manner.
 
+For a list of currently supported (browser) password managers, see [this][compatibility] issue.
+
 ## Values
 - Ease of use :: the design should guide users and not be an obstacle.
 - Privacy :: any data should only be stored locally with transparancy.
@@ -22,6 +24,10 @@ For details on contributing view the [contribution file](./CONTRIBUTING.md).
 The website is currently hosted on my website at [login.mitchells.work][login-site].
 
 Copyright © 2021 Mitchell Rademaker  
+
+
+<!-- issues -->
+[compatibility]: https://github.com/Mitchell3514/PMT/issues/7
 
 <!-- shields(.io) -->
 [version]: https://img.shields.io/badge/version-v0.1.2--alpha-blue
