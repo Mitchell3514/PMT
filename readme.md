@@ -18,7 +18,7 @@ Currently the site is only in Dutch, as that is what I will be using it for pers
 A more difficult project will be to add interactive pop-ups that guide a user on how to use the password manager of their choice. Even though it would be impossible to include all of them, it may be possible to dynamically generate instructions based on inserting the small differences per manager.
 
 ## Contributing
-For details on contributing view the [contribution file](./CONTRIBUTING.md).
+For details on contributing code view the [contribution file][contributing.md]. Or help keeping compatibility information up-to-date by reading the [testing information][compatibility-testing.md] first.
 
 ## Hosting
 The website is currently hosted on my website at [login.mitchells.work][login-site].
@@ -28,6 +28,8 @@ Copyright © 2021 Mitchell Rademaker
 
 <!-- issues -->
 [compatibility]: https://github.com/Mitchell3514/PMT/issues/7
+[contributing.md]: docs/CONTRIBUTING.md
+[compatibility-testing.md]: docs/COMPATIBILITY-TESTING.md
 
 <!-- shields(.io) -->
 [version]: https://img.shields.io/badge/version-v0.1.2--alpha-blue
