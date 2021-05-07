@@ -28,8 +28,8 @@ Copyright © 2021 Mitchell Rademaker
 
 <!-- issues -->
 [compatibility]: https://github.com/Mitchell3514/PMT/issues/7
-[contributing.md]: docs/CONTRIBUTING.md
-[compatibility-testing.md]: docs/COMPATIBILITY-TESTING.md
+[contributing.md]: docs/contributing.md
+[compatibility-testing.md]: docs/compatibility-testing.md
 
 <!-- shields(.io) -->
 [version]: https://img.shields.io/badge/version-v0.1.2--alpha-blue
